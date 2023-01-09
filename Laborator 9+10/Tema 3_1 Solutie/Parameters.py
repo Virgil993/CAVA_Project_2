@@ -2,7 +2,7 @@ import os
 
 class Parameters:
     def __init__(self):
-        self.base_dir = '../data'
+        self.base_dir = 'D:\Materiale Pentru Facultate\Concepte Si Aplicatii in Vederea Artificiala\CAVA_Project_2\Laborator 9+10\data'
         self.dir_pos_examples = os.path.join(self.base_dir, 'exemplePozitive')
         self.dir_neg_examples = os.path.join(self.base_dir, 'exempleNegative')
         self.dir_save_files = os.path.join(self.base_dir, 'salveazaFisiere')
