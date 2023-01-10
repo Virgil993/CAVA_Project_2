@@ -21,23 +21,24 @@ def show_image(title, image):
     cv.destroyAllWindows()
 
 path_exemple_pozitive_andy = "D:\Materiale Pentru Facultate\Concepte Si Aplicatii in Vederea Artificiala\CAVA_Project_2\Project_2\ExemplePozitive\ExemplePozitiveAndy\\"
+path_exemple_pozitive_louie = "D:\Materiale Pentru Facultate\Concepte Si Aplicatii in Vederea Artificiala\CAVA_Project_2\Project_2\ExemplePozitive\ExemplePozitiveLouie\\"
+path_exemple_pozitive_ora = "D:\Materiale Pentru Facultate\Concepte Si Aplicatii in Vederea Artificiala\CAVA_Project_2\Project_2\ExemplePozitive\ExemplePozitiveOra\\"
+path_exemple_pozitive_tommy = "D:\Materiale Pentru Facultate\Concepte Si Aplicatii in Vederea Artificiala\CAVA_Project_2\Project_2\ExemplePozitive\ExemplePozitiveTommy\\"
+path_exemple_pozitive_unknown = "D:\Materiale Pentru Facultate\Concepte Si Aplicatii in Vederea Artificiala\CAVA_Project_2\Project_2\ExemplePozitive\ExemplePozitiveUnknown\\"
 
-f = open(andy_addnotations_path,"r")
-lines_andy = f.readlines()
-
-def memoreazaExemplePozitive(path_ex_poz):
-    files = os.listdir(andy_path)
+def memoreazaExemplePozitive(path_ex_poz,image_folder,lines,unique):
+    files = os.listdir(image_folder)
     index=0
     for file in files:
         if(file[-3:]=="jpg"):
-            img = cv.imread(andy_path+file)
-            current_annotation = lines_andy[index].split()
+            img = cv.imread(image_folder+file)
+            current_annotation = lines[index].split()
             ok = 0
-            while(current_annotation[0]!=file or current_annotation[5]!="andy"):
+            while(current_annotation[0]!=file or current_annotation[5]!="unknown"):
                 if(current_annotation[0] > file):
                     ok=1
                     break
-                current_annotation = lines_andy[index].split()
+                current_annotation = lines[index].split()
                 index+=1
             if(ok == 1):
                 continue
@@ -48,10 +49,11 @@ def memoreazaExemplePozitive(path_ex_poz):
 
             patch = img[y_min:y_max,x_min:x_max]
             patch = cv.resize(patch,(72,72))
-            cv.imwrite(path_ex_poz+"andy_"+str(index)+".jpg",patch)
+            cv.imwrite(path_ex_poz+"unknown_"+str(index)+unique+".jpg",patch)
 
-
-# memoreazaExemplePozitive(path_exemple_pozitive_andy)
+# f = open(tommy_addnotations_path,"r")
+# lines = f.readlines()
+# memoreazaExemplePozitive(path_exemple_pozitive_unknown,tommy_path,lines,"0004")
 
         
             
