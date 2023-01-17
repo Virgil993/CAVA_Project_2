@@ -12,7 +12,7 @@ params.number_positive_examples = 6713  # numarul exemplelor pozitive
 params.number_negative_examples = 10000  # numarul exemplelor negative
 
 params.threshold = 2.5 # toate ferestrele cu scorul > threshold si maxime locale devin detectii
-params.has_annotations = True
+params.has_annotations = False
 
 params.use_hard_mining = False  # (optional)antrenare cu exemple puternic negative
 params.use_flip_images = True  # adauga imaginile cu fete oglindite
