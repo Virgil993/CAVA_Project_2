@@ -267,6 +267,10 @@ class FacialDetector:
         file_names = file_names[sorted_indices]
         scores = scores[sorted_indices]
         detections = detections[sorted_indices]
+        np.save(self.params.dir_save_solutions_task1+"\\detection_all_faces.npy",detections)
+        np.save(self.params.dir_save_solutions_task1+"\\file_names_all_faces.npy",file_names)
+        np.save(self.params.dir_save_solutions_task1+"\\scores_all_faces.npy",scores)
+        
 
         num_detections = len(detections)
         true_positive = np.zeros(num_detections)

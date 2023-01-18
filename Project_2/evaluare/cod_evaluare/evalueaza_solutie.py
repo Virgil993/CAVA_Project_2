@@ -170,8 +170,8 @@ def evaluate_results_task2(solution_path,ground_truth_path,character, verbose = 
 verbose = 0
 
 #change this on your machine
-solution_path_root = "../fisiere_solutie/331_Alexe_Bogdan/"
-ground_truth_path_root = "../../validare/"
+solution_path_root = "D:\Materiale Pentru Facultate\Concepte Si Aplicatii in Vederea Artificiala\CAVA_Project_2\Project_2\evaluare\\fisiere_solutie\\331_Alexe_Bogdan\\"
+ground_truth_path_root = "D:\Materiale Pentru Facultate\Concepte Si Aplicatii in Vederea Artificiala\CAVA_Project_2\Project_2\data\exempleTest\Validare_adnotari\\"
 
 
 #task1
@@ -183,17 +183,17 @@ evaluate_results_task1(solution_path, ground_truth_path, verbose)
 #pdb.set_trace()
 
 #task2
-solution_path = solution_path_root + "task2/"
+# solution_path = solution_path_root + "task2/"
 
 
-ground_truth_path = ground_truth_path_root + "task2_andy_gt_validare.txt"
-evaluate_results_task2(solution_path, ground_truth_path, "andy", verbose)
+# ground_truth_path = ground_truth_path_root + "task2_andy_gt_validare.txt"
+# evaluate_results_task2(solution_path, ground_truth_path, "andy", verbose)
 
-ground_truth_path = ground_truth_path_root + "task2_louie_gt_validare.txt"
-evaluate_results_task2(solution_path, ground_truth_path, "louie", verbose)
+# ground_truth_path = ground_truth_path_root + "task2_louie_gt_validare.txt"
+# evaluate_results_task2(solution_path, ground_truth_path, "louie", verbose)
 
-ground_truth_path = ground_truth_path_root + "task2_ora_gt_validare.txt"
-evaluate_results_task2(solution_path, ground_truth_path, "ora", verbose)
+# ground_truth_path = ground_truth_path_root + "task2_ora_gt_validare.txt"
+# evaluate_results_task2(solution_path, ground_truth_path, "ora", verbose)
 
-ground_truth_path = ground_truth_path_root + "task2_tommy_gt_validare.txt"
-evaluate_results_task2(solution_path, ground_truth_path, "tommy", verbose)
+# ground_truth_path = ground_truth_path_root + "task2_tommy_gt_validare.txt"
+# evaluate_results_task2(solution_path, ground_truth_path, "tommy", verbose)

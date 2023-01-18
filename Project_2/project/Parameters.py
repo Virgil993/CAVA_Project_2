@@ -14,6 +14,9 @@ class Parameters:
         else:
             print('directory {} exists '.format(self.dir_save_files))
 
+        self.dir_save_solutions = "D:\Materiale Pentru Facultate\Concepte Si Aplicatii in Vederea Artificiala\CAVA_Project_2\Project_2\evaluare\\fisiere_solutie\\333_Virgil_Turcu\\"
+        self.dir_save_solutions_task1 = os.path.join(self.dir_save_solutions,"task1")
+
         # set the parameters
         self.dim_window = 72  # exemplele pozitive (fete de oameni cropate) au 36x36 pixeli
         self.dim_hog_cell = 6  # dimensiunea celulei
