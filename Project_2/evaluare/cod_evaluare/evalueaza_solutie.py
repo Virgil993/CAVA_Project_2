@@ -170,7 +170,7 @@ def evaluate_results_task2(solution_path,ground_truth_path,character, verbose = 
 verbose = 0
 
 #change this on your machine
-solution_path_root = "D:\Materiale Pentru Facultate\Concepte Si Aplicatii in Vederea Artificiala\CAVA_Project_2\Project_2\evaluare\\fisiere_solutie\\331_Alexe_Bogdan\\"
+solution_path_root = "D:\Materiale Pentru Facultate\Concepte Si Aplicatii in Vederea Artificiala\CAVA_Project_2\Project_2\evaluare\\fisiere_solutie\\333_Virgil_Turcu\\"
 ground_truth_path_root = "D:\Materiale Pentru Facultate\Concepte Si Aplicatii in Vederea Artificiala\CAVA_Project_2\Project_2\data\exempleTest\Validare_adnotari\\"
 
 
