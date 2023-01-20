@@ -14,7 +14,7 @@ class Parameters:
         else:
             print('directory {} exists '.format(self.dir_save_files))
 
-        # directorul in care vor fi salvate solutiile
+        # directorul in care vor fi salvate solutiile sub format npy pentru a fi procesate de scriptul evalueaza_solutie
         self.dir_save_solutions = "D:\Materiale Pentru Facultate\Concepte Si Aplicatii in Vederea Artificiala\CAVA_Project_2\Project_2\evaluare\\fisiere_solutie\\333_Virgil_Turcu\\"
         self.dir_save_solutions_task1 = os.path.join(self.dir_save_solutions,"task1")
 
