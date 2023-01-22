@@ -4,7 +4,6 @@ from sklearn.svm import LinearSVC
 import matplotlib.pyplot as plt
 import glob
 import cv2 as cv
-import pdb
 import pickle
 import ntpath
 from copy import deepcopy
@@ -192,7 +191,9 @@ class FacialDetector:
         """
 
         test_images_path = os.path.join(self.params.dir_test_examples, '*.jpg')
+        print(test_images_path)
         test_files = glob.glob(test_images_path)
+        print(test_files)
         detections = None  # array cu toate detectiile pe care le obtinem
         scores = np.array([])  # array cu toate scorurile pe care le obtinem
         file_names = np.array([])  # array cu fisiele, in aceasta lista fisierele vor aparea de mai multe ori, pentru fiecare
@@ -208,8 +209,8 @@ class FacialDetector:
             # TODO: completati codul functiei in continuare
             image_scores = []
             image_detections = []
-            hog_descriptors = hog(img, pixels_per_cell=(self.params.dim_hog_cell, self.params.dim_hog_cell),
-                                  cells_per_block=(2, 2), feature_vector=False)
+            print(self.params.dim_hog_cell)
+            hog_descriptors = hog(img, pixels_per_cell=(self.params.dim_hog_cell, self.params.dim_hog_cell),cells_per_block=(2, 2), feature_vector=False)
             num_cols = img.shape[1] // self.params.dim_hog_cell - 1
             num_rows = img.shape[0] // self.params.dim_hog_cell - 1
             num_cell_in_template = self.params.dim_window // self.params.dim_hog_cell - 1

@@ -11,7 +11,7 @@ params.overlap = 0.3
 params.number_positive_examples = 4907  # numarul exemplelor pozitive
 params.number_negative_examples = 10000  # numarul exemplelor negative
 
-params.threshold = 0.1 # toate ferestrele cu scorul > threshold si maxime locale devin detectii
+params.threshold = 0 # toate ferestrele cu scorul > threshold si maxime locale devin detectii
 params.has_annotations = True
 
 params.use_hard_mining = False  # (optional)antrenare cu exemple puternic negative
